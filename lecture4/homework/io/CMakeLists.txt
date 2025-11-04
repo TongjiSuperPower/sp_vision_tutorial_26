@@ -12,5 +12,5 @@ elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64")
 else()
   message(FATAL_ERROR "Unsupported architecture: ${CMAKE_HOST_SYSTEM_PROCESSOR}!")
 endif()
-target_link_libraries(io MvCameraControl MVSDK usb-1.0)
+target_link_libraries(io MvCameraControl usb-1.0)
 
